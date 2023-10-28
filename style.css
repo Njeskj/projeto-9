@@ -1,0 +1,250 @@
+/* Reset de Estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo Global */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center; 
+    margin: 0; /* Remova o espaçamento superior */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Estilização da Seção de Navegação (fixa no topo) */
+.nav {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+    position: fixed; /* Torna a seção fixa no topo */
+    width: 100%; /* Ocupa toda a largura */
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ff5733;
+}
+
+/* Ajuste o padding superior do body para evitar sobreposição */
+body {
+    padding-top: 70px; /* Altura do header + altura da seção de navegação */
+}
+
+/* Seção de Recursos */
+.features {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.feature {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    flex-basis: calc(33.33% - 40px);
+}
+
+.feature img {
+    max-width: 100px;
+    margin: 0 auto 15px;
+}
+
+.feature h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.feature p {
+    font-size: 1.1rem;
+}
+
+/* Estilização da Seção CTA */
+.cta {
+    background-color: #f2f2f2;
+    padding: 40px 0;
+    text-align: center;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    height: 100vh; /* Torna a seção CTA ocupar toda a altura da tela */
+}
+
+/* Estilização do Grid */
+.cta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas com largura igual */
+    gap: 50px; /* Espaço entre os itens */
+    max-width: 900px; /* Define uma largura máxima para o grid */
+    width: 100%; /* Faz com que o grid ocupe a largura máxima disponível */
+}
+
+/* Estilização da Coluna 1 (à direita) */
+.cta-column:nth-child(1) {
+    text-align: right; /* Alinha o conteúdo da coluna à direita */
+}
+
+/* Estilização da Coluna 2 (à esquerda) */
+.cta-column:nth-child(2) {
+    text-align: left; /* Alinha o conteúdo da coluna à esquerda */
+}
+
+/* Estilização do H3 (título) */
+.cta-item h3 {
+    font-size: 1.2rem; /* Tamanho da fonte menor para o elemento H3 */
+}
+
+/* Estilização dos Itens */
+.cta-item {
+    display: flex; /* Usamos flexbox para alinhar imagem e conteúdo lado a lado */
+    align-items: center; /* Alinhar verticalmente imagem e conteúdo */
+    /* background-color: #fff; */
+    padding: 20px;
+    /* border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    width: calc(120% - 10px); /* Definimos a largura de cada item, considerando a margem entre eles */
+    margin-bottom: 20px; /* Espaço entre os itens */
+}
+
+/* Estilização da Imagem */
+.cta-item img {
+    max-width: 100px; /* Tamanho máximo da imagem */
+}
+
+/* Estilização da Descrição (conteúdo) */
+.cta-item-content {
+    margin-left: 10px; /* Margem à esquerda da descrição */
+}
+
+
+/* Estilização dos Itens (exemplo) */
+.cta-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.cta-item p {
+    font-size: 1rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff5733;
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilização do Botão "Voltar ao Topo" */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff5733;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Inicialmente oculto */
+    z-index: 1000;
+}
+
+#back-to-top:hover {
+    background-color: #2980b9;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
